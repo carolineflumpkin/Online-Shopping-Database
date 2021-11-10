@@ -1,0 +1,93 @@
+#Create an online shopping database
+#Create an order 
+shopping = &#91;{"id": 1001, "Name": "RED VELVET BLOUSE", "Available": 100, "Price": 25, "Original_Price": 24},
+            {"id": 1002, "Name": "BLACK SEQUIN ROMPER", "Available": 100, "Price": 51, "Original_Price": 49},
+            {"id": 1003, "Name": "FLARE PANTS", "Available": 100, "Price": 32, "Original_Price": 31},
+            {"id": 1004, "Name": "FAUX FUR BLAZER", "Available": 100, "Price": 60, "Original_Price": 59},
+            {"id": 1005, "Name": "CHRISTMAS CREWNECK", "Available": 100, "Price": 20, "Original_Price": 19},
+            {"id": 1006, "Name": "WRAP DRESS", "Available": 100, "Price": 42, "Original_Price": 41},
+            {"id": 1007, "Name": "FEATHERED DRESS", "Available": 100, "Price": 55, "Original_Price": 54},
+            {"id": 1008, "Name": "ONE SHOULDER TOP", "Available": 100, "Price": 45, "Original_Price": 44},
+            {"id": 1009, "Name": "RIBBED SWEATER", "Available": 100, "Price": 20, "Original_Price": 19},
+            {"id": 1010, "Name": "FLANNEL", "Available": 100, "Price": 21, "Original_Price": 20}]
+            
+#Create a menu
+#Create a way add and remove products
+def adminLoginWindow():
+  print("1.Display Menu")
+  print("2.Add Product")
+  print("3.Remove Product")
+  print("4.Products goods available")
+  print("5.Total Income")
+  print("6.Logout")
+  
+
+ef addproducts():
+    n = int(input("Enter the no.of.items need to be added : "))
+    for i in range(n):
+        new_id = int(input("Enter id : "))
+        new_Name = input("Enter Name : ")
+        new_Available = int(input("Enter Available : "))
+        new_Price = int(input("Enter Price : "))
+        new_original = int(input("Enter the original price : "))
+        d = &#91;{"id": new_id, "Name": new_Name, "Available": new_Available, "Price": new_Price,
+              "Original_Price": new_original}]
+        shopping.extend(d)
+        adminDisplayMenuWindow()
+
+def removeproducts():
+    dressId = int(input("Enter the id need to be deleted : "))
+    found = False
+    for d in shopping1:
+        found = d&#91;"id"] == dressId
+        if found != True:
+            temp.append(d)
+            continue
+        if found == True:
+            d&#91;"Available"] -= 1
+    print("Deleting item....")
+    if len(temp) == d:
+        print(f"{dressId} not found")
+    else:
+        print(f"{dressId}'s one available is removed from the list")
+    adminDisplayMenuWindow()
+
+def removeproducts():
+    dressId = int(input("Enter the id need to be deleted : "))
+    found = False
+    for d in shopping1:
+        found = d&#91;"id"] == dressId
+        if found != True:
+            temp.append(d)
+            continue
+        if found == True:
+            d&#91;"Available"] -= 1
+    print("Deleting item....")
+    if len(temp) == d:
+        print(f"{dressId} not found")
+    else:
+        print(f"{dressId}'s one available is removed from the list")
+    adminDisplayMenuWindow()
+
+
+def availableproducts():
+    Total = 0
+    print("\n")
+    for d in shopping:
+        print(f'{d&#91;"Name"]} = {d&#91;"Available"]}')
+        Total += (d&#91;"Available"])
+    print("\nTotal available goods is : ", Total)
+
+def availableproducts():
+    Total = 0
+    print("\n")
+    for d in shopping:
+        print(f'{d&#91;"Name"]} = {d&#91;"Available"]}')
+        Total += (d&#91;"Available"])
+    print("\nTotal available goods is : ", Total)
+    
+def userLoginWindow():
+    print("1.Display Menu")
+    print("2.Place order")
+    print("3.Cancel order")
+    print("4.Logout")
