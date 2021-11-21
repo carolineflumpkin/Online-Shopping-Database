@@ -1,0 +1,29 @@
+ef addproducts():
+    n = int(input("Enter the no.of.items need to be added : "))
+    for i in range(n):
+        new_id = int(input("Enter id : "))
+        new_Name = input("Enter Name : ")
+        new_Available = int(input("Enter Available : "))
+        new_Price = int(input("Enter Price : "))
+        new_original = int(input("Enter the original price : "))
+        d = &#91;{"id": new_id, "Name": new_Name, "Available": new_Available, "Price": new_Price,
+              "Original_Price": new_original}]
+        shopping.extend(d)
+        adminDisplayMenuWindow()
+
+def removeproducts():
+    dressId = int(input("Enter the id need to be deleted : "))
+    found = False
+    for d in shopping1:
+        found = d&#91;"id"] == dressId
+        if found != True:
+            temp.append(d)
+            continue
+        if found == True:
+            d&#91;"Available"] -= 1
+    print("Deleting item....")
+    if len(temp) == d:
+        print(f"{dressId} not found")
+    else:
+        print(f"{dressId}'s one available is removed from the list")
+    adminDisplayMenuWindow()
