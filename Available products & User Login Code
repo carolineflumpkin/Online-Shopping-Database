@@ -1,0 +1,13 @@
+def availableproducts():
+    Total = 0
+    print("\n")
+    for d in shopping:
+        print(f'{d&#91;"Name"]} = {d&#91;"Available"]}')
+        Total += (d&#91;"Available"])
+    print("\nTotal available goods is : ", Total)
+    
+def userLoginWindow():
+    print("1.Display Menu")
+    print("2.Place order")
+    print("3.Cancel order")
+    print("4.Logout")
