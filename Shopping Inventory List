@@ -1,0 +1,11 @@
+#create a list of items/inventory to be chosen from and ordered.
+shopping = &#91;{"id": 1001, "Name": "RED VELVET BLOUSE", "Available": 100, "Price": 25, "Original_Price": 24},
+            {"id": 1002, "Name": "BLACK SEQUIN ROMPER", "Available": 100, "Price": 51, "Original_Price": 49},
+            {"id": 1003, "Name": "FLARE PANTS", "Available": 100, "Price": 32, "Original_Price": 31},
+            {"id": 1004, "Name": "FAUX FUR BLAZER", "Available": 100, "Price": 60, "Original_Price": 59},
+            {"id": 1005, "Name": "CHRISTMAS CREWNECK", "Available": 100, "Price": 20, "Original_Price": 19},
+            {"id": 1006, "Name": "WRAP DRESS", "Available": 100, "Price": 42, "Original_Price": 41},
+            {"id": 1007, "Name": "FEATHERED DRESS", "Available": 100, "Price": 55, "Original_Price": 54},
+            {"id": 1008, "Name": "ONE SHOULDER TOP", "Available": 100, "Price": 45, "Original_Price": 44},
+            {"id": 1009, "Name": "RIBBED SWEATER", "Available": 100, "Price": 20, "Original_Price": 19},
+            {"id": 1010, "Name": "FLANNEL", "Available": 100, "Price": 21, "Original_Price": 20}]
