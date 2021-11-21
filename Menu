@@ -1,0 +1,9 @@
+#Create a menu
+
+def adminLoginWindow():
+  print("1.Display Menu")
+  print("2.Add Product")
+  print("3.Remove Product")
+  print("4.Products goods available")
+  print("5.Total Income")
+  print("6.Logout")
